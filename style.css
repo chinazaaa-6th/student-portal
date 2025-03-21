@@ -43,13 +43,29 @@ body {
     align-items: center;
 }
 .sidebar ul li a {
-    color: #fafafa;
-    text-decoration: none;
-    font-weight: bold;
     display: flex;
     align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #fafafa;
+    font-weight: bold;
     gap: 10px;
 }
+
+.sidebar ul li a i {
+    font-size: 18px;
+    color: #ff6b81; /* Eye-catching coral pink */
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover i,
+.sidebar ul li a.active i {
+    color: #6a0dad; /* Vibrant purple for hover/active state */
+}
+
 
 /* Main Content */
 .content {
@@ -119,4 +135,133 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 200px; /* Reduce sidebar width for smaller screens */
+        padding: 15px;
+    }
+    
+    .sidebar h2 {
+        font-size: 18px; /* Adjust heading size */
+        padding-bottom: 20px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px; /* Reduce font size for menu items */
+        padding: 8px;
+    }
+
+    .sidebar ul li a i {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .banner {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .forum-item {
+        padding: 10px;
+        flex-direction: column; /* Stack content for better readability */
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(26, 29, 47, 0.9); /* Slightly transparent background */
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+
+    .sidebar h2 {
+        display: none; /* Hide heading to save space */
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        padding: 8px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .sidebar-bottom {
+        display: none; /* Hide bottom options on smaller screens */
+    }
+
+    .content {
+        margin-bottom: 60px; /* Ensure content doesn't get covered by the fixed sidebar */
+        padding: 10px;
+    }
+
+    .banner {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .forum-list {
+        gap: 15px;
+    }
+
+    .forum-item {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar ul {
+        justify-content: center;
+    }
+
+    .sidebar ul li a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .content {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .banner {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .forum-item {
+        padding: 5px;
+    }
+
+    .forum-item h3 {
+        font-size: 14px;
+    }
 }
