@@ -1,0 +1,122 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+body {
+    background-color: #14121e;
+    color: #fafafa;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1a1d2f;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar h2 {
+    font-family: 'Urbanist', sans-serif;
+    color: #ffefe2;
+    padding-bottom: 40px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.sidebar ul li a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.banner {
+    background-color: #ffefe2;
+    padding: 20px 30px;
+    color: #14121e;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner button {
+    background-color: #14121e;
+    color: #fafafa;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Forum List */
+.forums {
+    margin-top: 20px;
+}
+.forums h2{
+    margin-bottom: 35px;
+}
+.forum-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.forum-item {
+    background-color: #fcf3fd;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #14121e;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forum-item h3 {
+    margin: 10px;
+}
+
+/* Sidebar Bottom */
+.sidebar-bottom {
+    margin-top: auto;
+}
+.sidebar-bottom ul {
+    list-style: none;
+}
+.sidebar-bottom ul li {
+    padding: 10px 0;
+}
+.sidebar-bottom ul li a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
