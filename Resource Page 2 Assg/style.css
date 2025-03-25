@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.gen{
+    width: 20%;
+    background-color: #14121E;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hearder{
+background-color: #14121E;
+padding: 0;
+margin: 0;
+display: flex;
+}
+.data{
+    background-color: #FCF3FD;
+    border: 20%;
+    border-radius: 15% 10%;
+}
+.frontend{
+    background-color: #FFEFE2;
+}
