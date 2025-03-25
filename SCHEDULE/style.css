@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #14121E;
+    height: 100vh;
+    min-height: 120vh;
+
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #161616;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+.logo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-links li {
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links li a:hover,
+.nav-links .active {
+    background: #222;
+    border-left: 4px solid #f39c12;
+}
+
+.bottom-links {
+    margin-top: auto;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bottom-links a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.bottom-links a:hover {
+    background: #222;
+}    
+
+
+.main {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-left: 10%;
+    min-height: 120vh;
+}
+.container {
+    background: #3f3c77;
+    color: white;
+    padding: 20px;
+}
+.header {
+    font-size: 24px;
+    font-weight: bold;
+}
+.info {
+    background: #6a65c0;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+.schedule th, .schedule td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.schedule th {
+    background: #6a65c0;
+    color: white;
+}
+.in {
+    color: blue;
+    font-weight: bold;
+}
+.out {
+    color: #FCF3FD;
+    font-weight: bold;
+}
+.footer {
+    background: #3f3c77;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+}
