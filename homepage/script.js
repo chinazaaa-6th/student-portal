@@ -46,3 +46,25 @@ function changeMonth(step) {
 }
 
 document.addEventListener("DOMContentLoaded", renderCalendar);
+
+// Get elements
+const popup = document.getElementById("popup");
+const openPopup = document.getElementById("openPopup");
+const closePopup = document.getElementById("closePopup");
+
+// Open popup when clicking the bell icon
+openPopup.onclick = function() {
+    popup.style.display = "block";
+}
+
+// Close popup when clicking the close button
+closePopup.onclick = function() {
+    popup.style.display = "none";
+}
+
+// Close popup if clicking outside the content box
+window.onclick = function(event) {
+    if (event.target === popup) {
+        popup.style.display = "none";
+    }
+}

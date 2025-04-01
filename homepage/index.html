@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Dashboard UI</title>
-    <link rel="stylesheet" href="merged.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f212bca9c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -144,8 +144,28 @@
                     </div>
                     
                     <div class="top-icons">
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bell notification-icon" id="openPopup"></i>                        
                         <i class="fa-solid fa-sliders"></i>
+                    </div>
+                </div>
+
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closePopup">&times;</span>
+                        <h2>🔔 Notifications</h2>
+                        <div class="notification">
+                            <p><strong>New Message:</strong> You have a new message from Sarah.</p>
+                            <span class="time">2m ago</span>
+                        </div>
+                        <div class="notification">
+                            <p><strong>Reminder:</strong> Meeting at 3:00 PM.</p>
+                            <span class="time">30m ago</span>
+                        </div>
+                        <div class="notification">
+                            <p><strong>Update:</strong> Your profile was viewed 10 times today.</p>
+                            <span class="time">1h ago</span>
+                        </div>
+                        <button class="view-all">View All</button>
                     </div>
                 </div>
             </aside>
