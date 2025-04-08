@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #F7F7F8;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 180px;
+    height: 100vh;
+    background: #12121A;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.bottom-links {
+    margin-top: auto;
+}
+
+.main {
+    margin-left: 220px;
+    width: 80%;
+}
+
+.badge {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+.header {
+    margin-top: 20px;
+    margin-right: 40%;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+}
+
+.header p {
+    margin-top: 20px;
+    color: #555;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    margin: 40px 0;
+    margin-bottom: 30px;
+}
+
+
+.categories a {
+    text-decoration: none;
+    color: #222;
+    padding: 8px 15px;
+    border: 1px solid #222;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.categories a.active{
+    background-color: #12121A;
+    color: white;
+
+}
+.categories a:hover {
+    background: black;
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 15px 0;
+}
+
+.job-listing {
+    margin-top: 20px;
+}
+
+.job {
+    /* background: white;
+    padding: 20px;
+    border-radius: 8px; */
+    margin-bottom: 15px;
+    /* border: 1px solid #ddd; */
+}
+
+.job-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.job p{
+    padding-top: 10px;
+}
+
+.apply {
+    text-decoration: none;
+    font-weight: bold;
+    color: #222;
+    transition: 0.3s;
+}
+
+.apply:hover {
+    text-decoration: underline;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    background: #EEE;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
