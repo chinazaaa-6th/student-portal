@@ -20,16 +20,16 @@
 }
 p{
     font-family: Arial, Helvetica, sans-serif;
-    color: #6544ea;
+    color: #14121e;
     
 }
 .logo{
-    width: 120px;
+    width: 100px;
     height: 80px;
     z-index: 1;
 }
 .background-image{
-    width:450px;
+    width:560px;
     height: 600px;
     border-radius: 15px;
 }
@@ -39,7 +39,7 @@ p{
 }
 .home, .jobs{
     margin-left: -60px;
-    margin-right: -50px;
+    margin-right: 250px;
 }
 .home:hover, .jobs:hover, .company:hover{
     text-decoration: underline;
@@ -50,7 +50,7 @@ p{
     font-size: 35px;
     font-weight: bold;
     display: block;
-    width: 250px;
+    width: 290px;
 }
 .secondp{
     color: black;
@@ -58,7 +58,7 @@ p{
 }
 button{
     color: white;
-    background-color: #6544ea;
+    background-color: #14121e;
     width: 120px;
     height: 40px;
     border: none;
@@ -197,3 +197,55 @@ label{
 .link{
     color: rgb(46, 123, 210);
 }
+@media(max-width: 425px){
+    .header{
+        width: 100px;
+        margin-right: -50px;
+    }
+    .logo{
+        width: 70px;
+        margin-right: 10px;
+        margin-left: -12px;
+    }
+    .background-image{
+        width: 100%;
+        margin-left: -100px;
+    }
+    .header{
+        width: 100px;
+    }
+    .home{
+        margin-right: 0px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .paragraph{
+        width: 250px;
+    }
+    .firstp{
+        width: 100px;
+        font-size: 15px;
+    }
+    .secondp{
+        width: 120px;
+        font-size: 10px;
+    }
+    button{
+        width: 50px;
+        font-size: 10px;
+        border-radius: 16px;
+        height: 22px;
+    }
+    .overall{
+        display: flex;
+        flex-direction: column;
+    }
+    .landing{
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+}
+@media(min-width:751px) and (max-width:999px){
+    
+        
+    }
