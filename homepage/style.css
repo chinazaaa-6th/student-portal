@@ -621,7 +621,8 @@ a {
   }
     
   #right-side{
-    margin-left: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   h2{
@@ -632,6 +633,11 @@ a {
   .upper {
     display: flex;
     flex-direction: row ;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 700px;
   }
 
   #container1{
@@ -671,7 +677,7 @@ a {
   }
   
   #div4{
-    margin-left: 248px;
+    margin-left: 248px; 
     margin-top: 20px;
   }
   
@@ -713,70 +719,40 @@ a {
   
   }
   
-  #container6{
+  .lower {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    gap: 30px;
   }
-  
-  #container6 p{
-    font-family: arial;
-  }
-  
+
   #div10 {
-    background-color: #fafafa;
-    height: 15px;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: 22px;
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 50%;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+
+  #div12 {
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 50%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #f7d9c4;
   }
   
-  #div11{
-    margin-left: 25px;
-    margin-top: -25px;
-  }
-  
-  #div12{
+  #div14 {
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 50%;
+    padding: 10px 15px;
+    margin-top: 10px;
     background-color: #fcf3fd;
-    height: 20px;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: 20px;
-  }
-  
-  #div13{
-    margin-left: 25px;
-    margin-top: -25px;
-  }
-  
-  #div14{
-    background-color: #ffefe2;
-    height: 20px;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: 20px;
-  }
-  
-  #div15{
-    margin-left: 25px;
-    margin-top: -25px;
-  }
-  
-  #container7{
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  #container7 p{
-    font-family: arial;
-  }
-  
-  #container8{
-    display: flex;
-  }
-  
-  #container8 p{
-    font-family: arial;
   }
   
   #span{
