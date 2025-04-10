@@ -68,3 +68,15 @@ window.onclick = function(event) {
         popup.style.display = "none";
     }
 }
+
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("left-side");
+
+hamburger.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+const closeSidebar = document.getElementById("closeSidebar");
+
+closeSidebar.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
