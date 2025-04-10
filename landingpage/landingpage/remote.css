@@ -1,3 +1,4 @@
+
 .overall{
     display: flex;
     flex-direction: row;
@@ -15,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 600px;
+    width: 100%;
     margin-left: 50px;
 }
 p{
@@ -37,8 +38,8 @@ p{
     margin-right: 60px;
     margin-left: -60px;
 }
-.home, .jobs{
-    margin-left: -60px;
+.home{
+    margin-left: 80px;
     margin-right: 250px;
 }
 .home:hover, .jobs:hover, .company:hover{
@@ -208,7 +209,7 @@ label{
         margin-left: -12px;
     }
     .background-image{
-        width: 100%;
+        width: 200px;
         margin-left: -100px;
     }
     .header{
@@ -238,14 +239,11 @@ label{
     }
     .overall{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .landing{
         margin-left: -40px;
         margin-right: 40px;
     }
 }
-@media(min-width:751px) and (max-width:999px){
-    
-        
-    }
