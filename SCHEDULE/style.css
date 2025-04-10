@@ -53,7 +53,7 @@ body {
     gap: 10px;
 }
 
-.nav-links li a:hover,
+/* .nav-links li a:hover, */
 .nav-links .active {
     background: #222;
     border-left: 4px solid #f39c12;
@@ -139,3 +139,31 @@ body {
     color: white;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      display: flex;
+      overflow-x: auto;
+    }
+  
+    .sidebar ul {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .main{
+      padding: 1rem;
+    }
+  
+    .schedule-table th,
+    .schedule-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
