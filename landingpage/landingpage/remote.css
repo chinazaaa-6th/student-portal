@@ -42,10 +42,6 @@ p{
     margin-left: 80px;
     margin-right: 250px;
 }
-.home:hover, .jobs:hover, .company:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
 .firstp{
     color: black;
     font-size: 35px;
