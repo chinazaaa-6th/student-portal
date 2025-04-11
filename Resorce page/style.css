@@ -6,7 +6,7 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    background-color:#FCF3FD;
     color: #333;
     font-size: 18px;
   }
@@ -32,8 +32,8 @@
     text-align: center;
   }
   
-  .card {
-    background-color:wheat;
+  .card{
+    background-color:#FFEFE2;
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
@@ -44,13 +44,13 @@
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: blue ;
     padding: 10px 10px;
     margin-bottom: 20px;
   }
   
   .card:hover {
-    transform: translateY(-5px);
+    transform:20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
