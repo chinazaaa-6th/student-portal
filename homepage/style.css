@@ -663,16 +663,16 @@ body {
     position: relative;  
     background-color: #14121E;
     color: white;
-    width: 230px;
+    width: 290px;
     height: 950px;
     padding-top: 40px;
-    padding-left: 20px;
+    padding-left: 30px;
     justify-content: center;
   }
   
    #first-item{
     font-size: 36px;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: -15px;
     margin-bottom: 80px; 
   } 
@@ -1019,7 +1019,6 @@ body {
       border-radius: 30px;
     } */
   }
-  
 /* Hamburger styles */
 .hamburger {
     display: none;
