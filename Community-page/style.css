@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy', sans-serif;
+    font-family: Gilroy;
 }
 
 body {
@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .sidebar h2 {
     font-family: 'Urbanist', sans-serif;
     color: #ffefe2;
@@ -174,94 +175,76 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .sidebar{
+        height: 830px;
     }
 
-    .sidebar {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(26, 29, 47, 0.9); /* Slightly transparent background */
-        backdrop-filter: blur(10px);
-        z-index: 1000;
+    .sidebar li{
+        margin-top: 20px;
     }
 
-    .sidebar h2 {
-        display: none; /* Hide heading to save space */
+     .sidebar h2 {
+       margin-top: 20px; 
+    } 
+
+    .sidebar ul li a{
+       font-size: 20px; 
     }
 
-    .sidebar ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        padding: 0;
+    .sidebar-bottom{
+        margin-top: 110px;
     }
 
-    .sidebar ul li {
-        padding: 8px;
+    .content{
+        margin-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .sidebar ul li a {
-        font-size: 14px;
-        padding: 5px;
+    .forums h2{
+        margin-top: 50px;
     }
 
-    .sidebar-bottom {
-        display: none; /* Hide bottom options on smaller screens */
-    }
-
-    .content {
-        margin-bottom: 60px; /* Ensure content doesn't get covered by the fixed sidebar */
-        padding: 10px;
-    }
-
-    .banner {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .forum-list {
-        gap: 15px;
-    }
-
-    .forum-item {
-        padding: 8px;
+    .forum-item{
+        margin-top: px;
+        height: 80px;
+        margin-bottom: 30px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .sidebar ul {
-        justify-content: center;
+@media screen and (max-width: 425px) {
+    .sidebar {
+        height: 725px;
+        width: 100px;
+    } 
+
+    .sidebar h2{
+        font-size: 10px;
     }
 
-    .sidebar ul li a {
-        font-size: 12px;
-        padding: 5px;
+    .sidebar ul li a{
+        font-size: 9px;
     }
 
-    .content {
-        padding: 5px;
-        font-size: 14px;
+    .sidebar ul li a i{
+        font-size: 10px;
     }
 
-    .banner {
-        font-size: 12px;
-        padding: 8px;
+    .banner{
+        width: 220px;
+        height: 160px;
+        font-size: 10px;
     }
 
-    .forum-item {
-        padding: 5px;
+    .forums h2{
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
 
-    .forum-item h3 {
-        font-size: 14px;
+    .forum-item{
+        width: 220px;
+        height: 80px;
+        font-size: 10px;
+        margin-bottom: 10px;
     }
 }
