@@ -7,10 +7,9 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: rgb(236, 236, 236);">
     <style>
        form {
-            box-shadow: 2px 2px 10px black;
             width: 250px;
             height: 100%;
             padding: 10px 10px 10px 10px;
@@ -21,8 +20,10 @@
             margin-bottom: 20px;
             border-radius: 5px;
             border-width: 1px;
-            padding: 5px;
-            width: 95%;
+            padding: 8px;
+            width: 93%;
+            border: none;
+            box-shadow: 2px 2px 10px black;
         }
         h1{
             text-align: center;
@@ -32,10 +33,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: rgb(236, 236, 236);
+            border-radius: 10px;
         }
         .submit{
             color: white;
             background-color: #14121e;
+            width: 100%;
+            align-items: center;
+            border-radius: 3px;
+            padding: 6px;
         }
         .submit:hover{
             opacity: 0.5;
@@ -43,16 +50,14 @@
         }
     </style>
 
-    <h1>Log In</h1>
+    <h1>Hello Again! <br>Log In</h1>
     <div id="whole" class="everything">
         <form id="form">
-            <label>Username</label>
             <input type="text" placeholder="Enter username" id="username"><br>
 
-            <label>Password</label>
-            <input type="password" placeholder="Enter Password" id="password"><br>
+            <input type="password" placeholder="Enter password" id="password"><br>
 
-            <input class="submit" type="submit" value="Submit" id="submit" style="width: 100%;">
+            <button class="submit" onclick="document.location='../homepage/index.html'"><a>Log In</a></button>
         </form>
     </div>
     <script>
@@ -65,35 +70,6 @@
             let email = document.querySelector("#email")
             let h1 = document.querySelector("h1");
             alert (`Welcome Back ${username.value}`)
-            //h1.innerHTML = 
-           // let para2 = document.querySelector(".everything");
-            //para2.innerHTML = `Welcome Back ${username.value}`;
-    
-            
-            let selectRadio = null;
-            if(radio1.checked){
-                selectRadio = radio1.value;
-            } if(radio2.checked){
-                selectRadio = radio2.value;
-            }
-
-            let yeslink = document.createElement('a');
-            yeslink.textContent = "Yes";
-            yeslink.href = 'a';
-            yeslink.onclick = function (event){
-                event.preventDefault();
-                alert("Hi")
-                checkWorkType(fullname, selectedRadio)
-            };
-            yeslink.style.backgroundColor = "blue"
-
-            let notLink =document.createElement('a');
-            notLink.textContent = "No";
-            notLink.href = 'a';
-            notLink.onclick = function (event) {
-                event.preventDefault();
-                location.reload()
-            } 
         }
         );
     </script>
